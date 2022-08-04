@@ -1,0 +1,545 @@
+*{
+  margin:0;
+  padding:0;
+  
+  text-decoration:none;
+  
+  box-sizing:box;
+  
+  outline:none;
+  border:none;
+}
+
+html{
+  overflow-x:hidden;
+  scroll-behavior:smooth;
+}
+  
+body{
+  background-color:#F6F3F3;
+}
+
+section{
+  min-height:100vh;
+  padding-bottom:2rem;
+   padding-top:1rem;
+}
+
+@font-face{
+  font-family:Oswald;
+  src: url(Fonts/Oswald-VariableFont_wght.ttf)
+}
+
+@font-face{
+  font-family:splash;
+  src: url(Fonts/Splash-Regular.ttf)
+}
+
+
+/*seccion header*/
+
+header input{
+  display:none;
+}
+
+header label{
+  z-index:1000;
+  
+  font-size:30px;
+  
+  color:#101010;
+  
+  cursor:pointer;
+  
+  visibility:hidden;
+  opacity:0;
+}
+
+header{
+  width:100%;
+  
+  background-color:#F6F3F3;
+  border-bottom:2px solid #101010;
+  
+  display:flex;
+  
+  position:fixed;
+  z-index:1000;
+  
+  text-align:center;
+  align-items:center;
+  justify-content:center;
+  
+  transition:all  1s  ease;
+}
+
+header .nav-bar{
+  display:flex;
+  
+  margin:0.5rem;
+  padding:0.rem;
+  
+  transition:all  1s ease;
+}
+
+
+header .nav-bar .nav{
+  display:flex;
+  
+  align-items:Center;
+  justify-content:center;
+  
+}
+
+header .nav-bar .nav a{
+ font-family:Oswald;
+  
+  margin:0rem 3.5rem 0rem 3.5rem;
+  padding:0rem 3.5rem 0rem 3.5rem;
+  
+  font-size:20px;
+  
+  color:#101010;
+  
+}
+
+
+header .nav-bar .nav a:hover{
+  font-weight:bold;
+  text-decoration:underline;
+}
+
+/*Seccion barra de  navegacion  blanca*/
+
+.header.active{
+  background:#171717;
+  background-size:cover;
+  
+  border-bottom:2px solid #FF006E;
+  
+}
+
+.header.active .nav a{
+  color:#F6F3F3;
+}
+
+.scrol{
+  height:10px;
+}
+
+.header.active .nav a:hover{
+  color:#FF006E;
+}
+
+/*Seccion HOME*/
+
+.home{
+  display:flex;
+}
+
+.home h1{
+  font-family:Oswald;
+  font-size:100px;
+  
+  margin:2rem 0rem 0rem 2rem;
+  
+  color:#171717;
+}
+
+.home .splash{
+  font-family:splash;
+}
+
+.home span{
+  color:#FF006E;
+}
+
+
+/*Seccion works*/
+
+.work{
+  display:flex;
+  
+  justify-content:center;
+  align-items:center;
+}
+
+.work .flex-cont{
+  display:block;
+  
+   justify-content:center;
+  
+   text-align:center;
+}
+
+.work .flex-cont h1{
+  text-align:center;
+  
+  font-family:Oswald;
+  
+  color:#171717;
+  
+  font-size:40px;
+  
+  text-decoration:underline;
+  text-decoration-color:#FF006E;
+  
+  margin:1.5rem 0rem .5rem 0rem;
+  padding:1.5rem 0rem .5rem 0rem;
+}
+
+.work .card{
+  display:inline-block;
+  
+  justify-content:center;
+  
+  width:650px;
+  height:460px;
+  
+  background: var(--i);
+  background-size:cover;
+  
+  margin:.5rem;
+  
+}
+
+.work .card .content{
+  display:flex;
+  
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  
+  width:100%;
+  height:100%;
+  
+background: rgba(255, 0, 110, .5);
+  
+  opacity:0;
+  
+  transition: .7s;
+}
+
+
+.work .card .content h3, a{
+  font-family:Oswald;
+  
+  margin:.5rem;
+  padding:.5rem;
+  
+  font-size:20px;
+  font-weight:bold;
+  
+  color:#101010;
+}
+  
+
+.work .card .content a{
+  color:#F6F3F3;
+}
+
+.work .card:hover .content, a{
+  opacity:1;
+}
+
+.work .card .content a:hover{
+  text-decoration:underline;
+}
+
+
+/*Seccion contact*/
+
+.bio{
+  display:flex;
+  
+  justify-content:center;
+}
+
+.bio .flex-cont{
+  display:block;
+  
+  justify-content:center;
+  text-align:center;
+}
+
+.bio .flex-cont h1{
+  font-family:Oswald;
+  
+  font-size:40px;
+  
+  color:#171717;
+  
+  margin:3rem 0rem 2rem 0rem;
+  
+  text-decoration:underline;
+  text-decoration-color:#FF006E;
+}
+
+.bio .flex-cont .me{
+  font-family:Oswald;
+  
+  font-weight:normal;
+  
+  font-size:17px;
+  
+  color:#171717;
+  
+  margin:3rem 4rem;
+}
+
+
+.bio .flex-cont .social{
+  display:flex;
+  
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  
+  margin: 1rem 0rem;
+  padding:1rem 0rem;
+}
+
+.bio .flex-cont .social img{
+   display:flex;
+   justify-content:center;
+  
+  margin:.5rem 3rem;
+  
+  width:40px;
+  height:40px;
+}
+
+.bio .flex-cont .social a{
+  font-weight:normal;
+  
+  font-family:Oswald;
+  
+  font-size:15px;
+  
+  justify-content:center;
+  
+  color:#171717;
+}
+
+.bio .flex-cont .social a:hover{
+  font-weight:bold;
+  
+  text-decoration:underline;
+  text-decoration-color:#FF006E;
+}
+
+
+
+/*Responsive design*/
+
+@media (max-width: 850px){
+  
+  html{
+    overflow-x:hidden;
+  }
+  
+  section{
+    overflow-x:hidden;
+  }
+  
+  header{
+    background:#f6f3f3;
+    
+    border:none;
+  }
+ 
+ .header.active{
+   background:#f6f3f3;
+   
+   border:none;
+ }
+
+ .header.active .nav{
+   display:block;
+   border-bottom:2px solid #FF006E;
+ }
+ 
+ .header.active .nav a{
+   color:#FF006E;
+ }
+ 
+
+ header label{
+    visibility:visible;
+    opacity:1;
+    
+    margin-right:2rem;
+    margin-top:2rem;
+    
+    position:absolute;
+    right:0;
+   
+  }
+  
+  header .nav-bar .nav{
+    display:block;
+    
+    position:absolute;
+    top:100%;
+    right:0;
+    
+    width:100%;
+    
+    background:#f6f3f3;
+    
+    border-bottom:2px solid #101010;
+    
+    transform-origin:top;
+    transform:scaleX(0);
+    
+    opacity:0;
+    
+    transition:0.5s ease;
+  }
+  
+  header .nav-bar .nav a{
+    display:block;
+    
+    align-items:center;
+    text-align:center;
+    
+    font-size:20px;
+    
+    margin:2.5rem 2.5rem;
+  }
+  
+  header input:checked ~ .nav-bar .nav{
+    transform: scaleX(1);
+    opacity:1;
+  }
+  
+  header input:checked ~ label::before{
+    content:'\f00d';
+  
+  }
+
+  .home h1{
+    font-size:80px;
+    
+    margin:0rem 0rem 0rem .5rem;
+  }
+
+}
+
+@media (max-width: 430px){
+  
+  .work .flex-cont .card{
+    width:400px;
+    height:260px;
+  }
+  
+  .bio .flex-cont .me{
+    font-size:15px;
+    
+    margin:0rem 1rem 0rem 1rem;
+    padding:0rem 1rem 0rem 1rem;
+  }
+  
+  .bio .flex-cont .social img{
+  
+  margin:.5rem 1rem;
+}
+}
+
+@media (max-width: 375px){
+  
+  .home h1{
+    font-size:70px;
+  }
+  
+  .work .flex-cont .card{
+    width:350px;
+    height:200px;
+  }
+  
+}
+
+@media (max-width: 320px){
+  
+  .home h1{
+    font-size:58px;
+  }
+  
+  .work .flex-cont .card{
+    width:310px;
+    height:160px;
+  }
+  
+  .bio .flex-cont .social a{
+    justify-content:center;
+    
+    font-size:12px;
+  }
+  
+  .bio .flex-cont .social img{
+    justify-content:center;
+    
+  margin:.5rem .5rem;
+  
+  width:30px;
+  height:30px;
+}
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
