@@ -415,7 +415,7 @@ background: rgba(0, 0, 0, .9);
   }
 
   .home h1{
-    font-size:80px;
+    font-size:120px;
     
     margin:0rem 0rem 0rem .5rem;
   }
@@ -423,6 +423,10 @@ background: rgba(0, 0, 0, .9);
 }
 
 @media (max-width: 430px){
+  
+  .home h1{
+    font-size:80px;
+  }
   
   .work .flex-cont .card{
     width:400px;
@@ -458,7 +462,7 @@ background: rgba(0, 0, 0, .9);
 @media (max-width: 320px){
   
   .home h1{
-    font-size:58px;
+    font-size:70px;
   }
   
   .work .flex-cont .card{
